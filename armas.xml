@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<armero numMaximoArmas="10" armasTotales="8">
+    <arma>
+        <nombre>uno</nombre>
+        <categoria>Espada</categoria>
+        <calidad>Común</calidad>
+        <tipoDanho>Corte</tipoDanho>
+        <peso>1.0</peso>
+        <coste>65.01</coste>
+    </arma>
+    <arma>
+        <nombre>dos</nombre>
+        <categoria>Arco</categoria>
+        <calidad>Poco común</calidad>
+        <tipoDanho>Corte</tipoDanho>
+        <peso>2.0</peso>
+        <coste>53.01</coste>
+    </arma>
+    <arma>
+        <nombre>tres</nombre>
+        <categoria>Maza</categoria>
+        <calidad>Rara</calidad>
+        <tipoDanho>Golpe</tipoDanho>
+        <peso>3.0</peso>
+        <coste>62.01</coste>
+    </arma>
+    <arma>
+        <nombre>cuatro</nombre>
+        <categoria>Sable</categoria>
+        <calidad>Épica</calidad>
+        <tipoDanho>Sangrado</tipoDanho>
+        <peso>2.0</peso>
+        <coste>26.01</coste>
+    </arma>
+    <arma>
+        <nombre>cinco</nombre>
+        <categoria>Lanza</categoria>
+        <calidad>Legendaria</calidad>
+        <tipoDanho>Penetración</tipoDanho>
+        <peso>1.0</peso>
+        <coste>53.01</coste>
+    </arma>
+    <arma>
+        <nombre>seis</nombre>
+        <categoria>Mandoble</categoria>
+        <calidad>Mítica</calidad>
+        <tipoDanho>Veneno</tipoDanho>
+        <peso>4.0</peso>
+        <coste>12.01</coste>
+    </arma>
+    <arma>
+        <nombre>siete</nombre>
+        <categoria>Bastón</categoria>
+        <calidad>Común</calidad>
+        <tipoDanho>Fuego</tipoDanho>
+        <peso>2.0</peso>
+        <coste>11.01</coste>
+    </arma>
+    <arma>
+        <nombre>ocho</nombre>
+        <categoria>Estoque</categoria>
+        <calidad>Poco común</calidad>
+        <tipoDanho>Fuego</tipoDanho>
+        <peso>321.0</peso>
+        <coste>3.01</coste>
+    </arma>
+</armero>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.armeriafx.FXMLController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+                <MenuItem fx:id="menuFiltrarArma" mnemonicParsing="false" onAction="#abrirMenu" text="Filtrar" />
+                <MenuItem fx:id="menuCrearArma" mnemonicParsing="false" onAction="#abrirMenu" text="Nueva Arma" />
+                <MenuItem fx:id="menuBorrarArma" mnemonicParsing="false" onAction="#abrirMenu" text="Eliminar Arma" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Pane prefHeight="314.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="nuevaNombre" layoutX="128.0" layoutY="59.0" />
+            <Label layoutX="67.0" layoutY="63.0" text="Nombre" />
+            <Label layoutX="63.0" layoutY="104.0" text="Categoría" />
+            <TextField fx:id="nuevaCategoria" layoutX="128.0" layoutY="100.0" />
+            <Label layoutX="41.0" layoutY="149.0" text="Tipo de daño" />
+            <TextField fx:id="nuevaTipoDanho" layoutX="128.0" layoutY="145.0" />
+            <Label layoutX="89.0" layoutY="192.0" text="Peso" />
+            <TextField fx:id="nuevaPeso" layoutX="128.0" layoutY="188.0" />
+            <Button layoutX="128.0" layoutY="235.0" mnemonicParsing="false" onAction="#crearArmaNueva" text="Crear" />
+            <Button fx:id="limpiarMenuNuevaArma" layoutX="223.0" layoutY="235.0" mnemonicParsing="false" onAction="#limpiarMenu" text="Limpiar" />
+            <Label layoutX="128.0" layoutY="29.0" text="Crear Arma nueva" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.armeriafx.FXMLController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#menuFiltrarArma" text="Filtrar" />
+                <MenuItem mnemonicParsing="false" onAction="#menuCrearArma" text="Nueva Arma" />
+                <MenuItem mnemonicParsing="false" onAction="#guardarArmeria" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" onAction="#cargarArmeria" text="Cargar" />
+                  <MenuItem mnemonicParsing="false" onAction="#cargarArmeriaDesdeBaseDeDatos" text="importar fav" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <ListView fx:id="listaArmas" onMouseClicked="#mostrarInfoArma" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Pane prefHeight="314.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane id="armaNuevaPanel" fx:id="panelArmaNueva" prefHeight="292.0" prefWidth="321.0" visible="false">
+               <children>
+                  <Label layoutX="129.0" layoutY="14.0" text="Crear Arma nueva" />
+                  <Label layoutX="64.0" layoutY="42.0" text="Nombre" />
+                  <TextField fx:id="nuevaNombre" layoutX="126.0" layoutY="38.0" promptText="nombre" />
+                  <Label layoutX="57.0" layoutY="75.0" text="Categoría" />
+                  <TextField fx:id="nuevaCategoria" layoutX="126.0" layoutY="71.0" promptText="categoria" />
+                  <Label layoutX="68.0" layoutY="108.0" text="Calidad" />
+                  <TextField fx:id="nuevaCalidad" layoutX="126.0" layoutY="104.0" promptText="calidad" />
+                  <Label layoutX="38.0" layoutY="141.0" text="Tipo de daño" />
+                  <TextField fx:id="nuevaTipoDanho" layoutX="126.0" layoutY="137.0" promptText="tipo de daño" />
+                  <Label layoutX="83.0" layoutY="174.0" text="Peso" />
+                  <TextField fx:id="nuevaPeso" layoutX="126.0" layoutY="170.0" promptText="peso" />
+                  <Button fx:id="botonCrearArma" layoutX="130.0" layoutY="236.0" mnemonicParsing="false" onAction="#crearArmaNueva" prefHeight="25.0" prefWidth="70.0" text="Crear" />
+                  <Button fx:id="botonLimpiarMenuNuevaArma" layoutX="210.0" layoutY="236.0" mnemonicParsing="false" onAction="#limpiarMenu" prefHeight="25.0" prefWidth="70.0" text="Limpiar" />
+               </children>
+            </Pane>
+            <Pane fx:id="PanelInfoArma" prefHeight="292.0" prefWidth="321.0">
+               <children>
+                  <Label layoutX="64.0" layoutY="42.0" text="Nombre" />
+                  <Label layoutX="57.0" layoutY="75.0" text="Categoría" />
+                  <Label layoutX="38.0" layoutY="141.0" text="Tipo de daño" />
+                  <Label layoutX="83.0" layoutY="174.0" text="Peso" />
+                  <Button layoutX="210.0" layoutY="236.0" mnemonicParsing="false" onAction="#eliminarArma" prefHeight="25.0" prefWidth="70.0" text="Eliminar" />
+                  <Label layoutX="68.0" layoutY="108.0" text="Calidad" />
+                  <Label layoutX="78.0" layoutY="207.0" text="Coste" />
+                  <Label fx:id="nombreArma" layoutX="138.0" layoutY="42.0" />
+                  <Label fx:id="categoriaArma" layoutX="138.0" layoutY="75.0" />
+                  <Label fx:id="calidadArma" layoutX="138.0" layoutY="108.0" />
+                  <Label fx:id="tipoDanhoArma" layoutX="138.0" layoutY="141.0" />
+                  <Label fx:id="pesoArma" layoutX="138.0" layoutY="174.0" />
+                  <Label fx:id="costeArma" layoutX="138.0" layoutY="207.0" />
+                  <Button layoutX="239.0" layoutY="199.0" mnemonicParsing="false" onAction="#guardarArmaEnBaseDeDatos" prefHeight="25.0" prefWidth="40.0" text="Fav" />
+               </children>
+            </Pane>
+            <Pane id="filtrarArmaPanel" fx:id="panelFiltrarArma" prefHeight="292.0" prefWidth="321.0" visible="false">
+               <children>
+                  <Label layoutX="129.0" layoutY="14.0" text="Buscar Arma" />
+                  <Label layoutX="64.0" layoutY="42.0" text="Nombre" />
+                  <Label layoutX="57.0" layoutY="75.0" text="Categoría" />
+                  <Label layoutX="68.0" layoutY="108.0" text="Calidad" />
+                  <Label layoutX="38.0" layoutY="141.0" text="Tipo de daño" />
+                  <Label layoutX="83.0" layoutY="174.0" text="Peso" />
+                  <Label layoutX="78.0" layoutY="207.0" text="Coste" />
+                  <TextField fx:id="buscarNombre" layoutX="126.0" layoutY="38.0" promptText="nombre" />
+                  <TextField fx:id="buscarCategoria" layoutX="126.0" layoutY="71.0" promptText="categoria" />
+                  <TextField fx:id="buscarCalidad" layoutX="126.0" layoutY="104.0" promptText="calidad" />
+                  <TextField fx:id="buscarTipoDanho" layoutX="126.0" layoutY="137.0" promptText="tipo de daño" />
+                  <TextField fx:id="buscarPesoMin" layoutX="126.0" layoutY="170.0" prefHeight="25.0" prefWidth="72.0" promptText="peso min" />
+                  <TextField fx:id="buscarPesoMax" layoutX="202.0" layoutY="170.0" prefHeight="25.0" prefWidth="72.0" promptText="peso max" />
+                  <TextField fx:id="buscarCosteMin" layoutX="126.0" layoutY="203.0" prefHeight="25.0" prefWidth="72.0" promptText="coste min" />
+                  <TextField fx:id="buscarCosteMax" layoutX="202.0" layoutY="203.0" prefHeight="25.0" prefWidth="72.0" promptText="coste max" />
+                  <Button fx:id="botonBuscarArma" layoutX="130.0" layoutY="236.0" mnemonicParsing="false" onAction="#buscarArma" prefHeight="25.0" prefWidth="70.0" text="Buscar" />
+                  <Button layoutX="210.0" layoutY="236.0" mnemonicParsing="false" onAction="#limpiarMenuBuscar" prefHeight="25.0" prefWidth="70.0" text="Limpiar" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,6 @@
+1#Espada#Común#Corte#1.0
+2#Hacha#Poco común#Golpe#2.0
+Aurora#Arco#Rara#Penetración#5.0
+Bigotes#Mandoble#Común#Golpe#10.5
+Espada multidimensional#Espada#Legendaria#Corte#4.45
+3#Cuchillo#Rara#Penetración#3.0
