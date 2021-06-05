@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <armero numMaximoArmas="10" armasTotales="8">
     <arma>
-        <nombre>uno</nombre>
+        <nombre>espada ardiente</nombre>
         <categoria>Espada</categoria>
         <calidad>Común</calidad>
         <tipoDanho>Corte</tipoDanho>
@@ -9,7 +9,7 @@
         <coste>65.01</coste>
     </arma>
     <arma>
-        <nombre>dos</nombre>
+        <nombre>Kindred</nombre>
         <categoria>Arco</categoria>
         <calidad>Poco común</calidad>
         <tipoDanho>Corte</tipoDanho>
@@ -17,7 +17,7 @@
         <coste>53.01</coste>
     </arma>
     <arma>
-        <nombre>tres</nombre>
+        <nombre>Emperador</nombre>
         <categoria>Maza</categoria>
         <calidad>Rara</calidad>
         <tipoDanho>Golpe</tipoDanho>
@@ -25,7 +25,7 @@
         <coste>62.01</coste>
     </arma>
     <arma>
-        <nombre>cuatro</nombre>
+        <nombre>poluwar</nombre>
         <categoria>Sable</categoria>
         <calidad>Épica</calidad>
         <tipoDanho>Sangrado</tipoDanho>
@@ -33,7 +33,7 @@
         <coste>26.01</coste>
     </arma>
     <arma>
-        <nombre>cinco</nombre>
+        <nombre>Tridente de poseidón</nombre>
         <categoria>Lanza</categoria>
         <calidad>Legendaria</calidad>
         <tipoDanho>Penetración</tipoDanho>
@@ -41,7 +41,7 @@
         <coste>53.01</coste>
     </arma>
     <arma>
-        <nombre>seis</nombre>
+        <nombre>Dao</nombre>
         <categoria>Mandoble</categoria>
         <calidad>Mítica</calidad>
         <tipoDanho>Veneno</tipoDanho>
@@ -49,7 +49,7 @@
         <coste>12.01</coste>
     </arma>
     <arma>
-        <nombre>siete</nombre>
+        <nombre>Ruyi Jingu Bang</nombre>
         <categoria>Bastón</categoria>
         <calidad>Común</calidad>
         <tipoDanho>Fuego</tipoDanho>
@@ -57,7 +57,7 @@
         <coste>11.01</coste>
     </arma>
     <arma>
-        <nombre>ocho</nombre>
+        <nombre>Flissa</nombre>
         <categoria>Estoque</categoria>
         <calidad>Poco común</calidad>
         <tipoDanho>Fuego</tipoDanho>
